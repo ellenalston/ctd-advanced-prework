@@ -43,8 +43,8 @@ This project is hosted in a **public GitHub repository** with the following stru
 ## Setup and Running Instructions
 1. **Clone the repository**:
    ```sh
-   git clone https://github.com/your-username/art-gallery-viewer.git
-   cd art-gallery-viewer
+   git clone https://github.com/ellenalston/ctd-advanced-prework.git
+   cd ctd-advanced-prework
    ```
 2. **Open `index.html` in a browser**:
    - Double-click `index.html` to open it in your default browser.
