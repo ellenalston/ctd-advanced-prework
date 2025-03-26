@@ -4,16 +4,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const artworkId = params.get("id");
 
   if (artworkId) {
-    // Show details view
-    showArtworkDetails(artworkId);
+    // Get details view
+    getArtworkData(artworkId);
   } else {
-    // Show gallery view
+    // Get gallery view
     getGalleryData();
   }
 });
 
 // Fetch and display the gallery
 async function getGalleryData() {
+  
   const randomPage = Math.floor(Math.random() * 10) + 1;
   const url = `https://api.artic.edu/api/v1/artworks?page=${randomPage}&limit=100`;
   const iiifBaseUrl = "https://www.artic.edu/iiif/2/";
@@ -63,7 +64,7 @@ function displayArtworks(artworks, iiifBaseUrl) {
 }
 
 // Fetch and display details of a specific artwork
-async function showArtworkDetails(artworkId) {
+async function getArtworkData(artworkId) {
   const url = `https://api.artic.edu/api/v1/artworks/${artworkId}`;
   const iiifBaseUrl = "https://www.artic.edu/iiif/2/";
 
@@ -75,7 +76,9 @@ async function showArtworkDetails(artworkId) {
 
     const json = await response.json();
     const artwork = json.data;
+
     displayArtworkDetails(artwork, iiifBaseUrl);
+
   } catch (error) {
     console.error(error.message);
     document.getElementById("art-details").innerHTML = "<p>Error loading artwork details.</p>";
