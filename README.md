@@ -20,14 +20,19 @@ This project is hosted in a **public GitHub repository** with the following stru
 - **Art Institute of Chicago API** as the public data source
 
 ## Features
-✅ **Fetch and display artwork data from a public API**  
-✅ **Navigation between gallery and artwork details**
-✅ **Issue new GET requests dynamically when navigating between pages**
-✅ **Lazy loading of images for performance optimization**
-✅ **Responsive design for mobile-friendly browsing**
+✅ **Fetch and display artwork data from a public API** 
+
 ✅ **Display at least 2 API endpoints**:
    - The **gallery page** fetches a list of artworks from the API.
    - The **details page** fetches specific information about an artwork when clicked.
+
+✅ **Navigation between gallery and artwork details**
+
+✅ **Issue new GET requests dynamically when navigating between pages**
+
+✅ **Lazy loading of images for performance optimization**
+
+✅ **Responsive design for mobile-friendly browsing**
 
 
 ## How It Works
