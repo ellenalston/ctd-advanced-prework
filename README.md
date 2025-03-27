@@ -34,10 +34,9 @@ This project is a dynamic **Art Gallery Viewer** that fetches artwork data from 
    git clone https://github.com/ellenalston/ctd-advanced-prework.git
    cd ctd-advanced-prework
    ```
-2. **Open `index.html` in a browser**:
-   - Double-click `index.html` to open it in your default browser.
-     
-3. **Interact with the gallery**:
+2. **Open `index.html` in a browser**
+3.      
+4. **Interact with the gallery**:
    - Browse through the displayed artworks.
    - Click on an artwork to view details.
    - Use the "Back to Gallery" button to return to the main view.
