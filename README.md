@@ -35,8 +35,8 @@ This project is a dynamic **Art Gallery Viewer** that fetches artwork data from 
    cd ctd-advanced-prework
    ```
 2. **Open `index.html` in a browser**
-3.      
-4. **Interact with the gallery**:
+    
+3. **Interact with the gallery**:
    - Browse through the displayed artworks.
    - Click on an artwork to view details.
    - Use the "Back to Gallery" button to return to the main view.
