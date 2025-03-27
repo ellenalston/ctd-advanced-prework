@@ -12,8 +12,17 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+function showLoading() {
+  document.getElementById("loading").style.display = "block";
+}
+
+function hideLoading() {
+  document.getElementById("loading").style.display = "none";
+}
+
 // Fetch and display the gallery
 async function getGalleryData() {
+  showLoading();
   
   const randomPage = Math.floor(Math.random() * 10) + 1;
   const url = `https://api.artic.edu/api/v1/artworks?page=${randomPage}&limit=100`;
@@ -26,13 +35,15 @@ async function getGalleryData() {
     }
 
     const json = await response.json();
-
     displayArtworks(json.data, iiifBaseUrl);
 
   } catch (error) {
     console.error(error.message);
+  } finally {
+    hideLoading();
   }
 }
+
 
 // Renders the gallery with only images
 function displayArtworks(artworks, iiifBaseUrl) {

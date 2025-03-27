@@ -45,7 +45,6 @@ button:hover {
     gap: 20px;
 }
 
-/* Artwork container with rounded corners and shadow */
 .artwork {
     border-radius: 15px;
     overflow: hidden;
@@ -94,16 +93,18 @@ button:hover {
 }
 
 /* Detailed View Image */
+
+
 .art-detail-image {
     width: 60%;
     display: block;
-    margin: 20px auto;
+    margin: 20px auto 50px;
     border-radius: 15px;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
 #back-button {
-    background-color: #D88C65; /* Warm Terracotta */
+    background-color: #D88C65;
     color: white;
     border: none;
     padding: 10px 20px;
