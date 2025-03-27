@@ -14,10 +14,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function showLoading() {
   document.getElementById("loading").style.display = "block";
+  document.getElementById("gallery-view").style.display = "none";
 }
 
 function hideLoading() {
   document.getElementById("loading").style.display = "none";
+  document.getElementById("gallery-view").style.display = "block";
 }
 
 // Fetch and display the gallery
